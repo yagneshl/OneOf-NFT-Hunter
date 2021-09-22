@@ -12,14 +12,19 @@ import json
 ## adapter=RequestsWebhookAdapter())
 
 while True:
-    jsn = requests.get('https://api.oneof.com/nft/marketplace/' + input("NFT Code:") + '?start=0&limit=1000')
+    nftCode = input("NFT Code:")
+    maxPrice = input("Enter max price ($USD):")
+    print("Searching...")
+    jsn = requests.get('https://api.oneof.com/nft/marketplace/' + nftCode + '?start=0&limit=1000')
     data = jsn.json()
     hunt = (data['results'])
-    maxPrice = input("Enter max price ($USD):")
-    
+    jsn2 = requests.get('https://api.oneof.com/nft/' + nftCode)
+    meta = jsn2.json()
+    nftName = (meta["title"])
+        
     for n in range(len(hunt)):
             if int(float(hunt[n]["price"])) < int(maxPrice):
-                CURRENT_PRICE = ("OneOf Day One NFT #{} was listed for ${} by {}.".format(hunt[n]["sequence"], hunt[n]["price"], hunt[n]["seller"]))
+                CURRENT_PRICE = ("OneOf {} NFT #{} was listed for ${} by {}.".format(nftName, hunt[n]["sequence"], hunt[n]["price"], hunt[n]["seller"]))
                 print (CURRENT_PRICE)
 ##                webhook.send("**" + str(datetime.datetime.now().strftime("%Y/%m/%d ""%H:%M:%S")) + "**: " + CURRENT_PRICE)
 
