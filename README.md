@@ -88,7 +88,11 @@ Add {WebhookID} and {WebhookToken} to the top of the script and uncomment (remov
 
 # Issues Running NFTHunter 
 ## Known Issues
-* Null price entries in the OneOf database break functionality and will require a restart of the program once the error is fixed. This is often quickly resolved by the team but may take them some time.
+```
+    if int(float(hunt[n]["price"])) < int(maxPrice):
+TypeError: float() argument must be a string or a number, not 'NoneType'
+```
+* The error above is caused by null price entries in the OneOf database that break functionality of the script and will require a restart of the program once the error is fixed. This is often quickly resolved by the team but may take them some time.
 * If the script shuts down before displaying the search results, run the script in an IDLE shell so the console is not forced closed when the script encounters an error in the OneOf database. This should also help with troubleshooting.
 * Installing dependency packages may result in errors. Try troubleshooting by searching the exact error message on Google.
 
