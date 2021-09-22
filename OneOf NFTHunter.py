@@ -17,7 +17,7 @@ while True:
     hunt = (data['results'])
     maxPrice = input("Enter max price ($USD):")
     
-    for n in range(len(dayOne)):
+    for n in range(len(hunt)):
             if int(float(hunt[n]["price"])) < int(maxPrice):
                 CURRENT_PRICE = ("OneOf Day One NFT #{} was listed for {} {}.".format(hunt[n]["sequence"], hunt[n]["price"], hunt[n]["seller"]))
                 print (CURRENT_PRICE)
