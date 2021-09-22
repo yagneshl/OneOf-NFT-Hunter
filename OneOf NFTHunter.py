@@ -1,9 +1,9 @@
 import requests
 import time
 import json
-import discord
-import datetime
-from discord import Webhook, RequestsWebhookAdapter, File
+##import discord
+##import datetime
+##from discord import Webhook, RequestsWebhookAdapter, File
 
 ### Create webhook
 ##WEBHOOK_ID = 
