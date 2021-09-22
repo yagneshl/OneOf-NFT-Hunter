@@ -19,7 +19,7 @@ while True:
     
     for n in range(len(hunt)):
             if int(float(hunt[n]["price"])) < int(maxPrice):
-                CURRENT_PRICE = ("OneOf Day One NFT #{} was listed for $USD{} by {}.".format(hunt[n]["sequence"], hunt[n]["price"], hunt[n]["seller"]))
+                CURRENT_PRICE = ("OneOf Day One NFT #{} was listed for ${} by {}.".format(hunt[n]["sequence"], hunt[n]["price"], hunt[n]["seller"]))
                 print (CURRENT_PRICE)
 ##                webhook.send("**" + str(datetime.datetime.now().strftime("%Y/%m/%d ""%H:%M:%S")) + "**: " + CURRENT_PRICE)
 
