@@ -5,7 +5,7 @@ import json
 ##import datetime
 ##from discord import Webhook, RequestsWebhookAdapter, File
 
-### Create webhook
+### Create webhook - add webhookID and webhook token for your discord bot here and remove ## from the code below to uncomment (lines 9, 10, 11, 12, 24)
 ##WEBHOOK_ID = 
 ##WEBHOOK_TOKEN = ""
 ##webhook = Webhook.partial(WEBHOOK_ID, WEBHOOK_TOKEN,\
@@ -23,4 +23,4 @@ while True:
                 print (CURRENT_PRICE)
 ##                webhook.send("**" + str(datetime.datetime.now().strftime("%Y/%m/%d ""%H:%M:%S")) + "**: " + CURRENT_PRICE)
 
-    time.sleep(300)
+    time.sleep(300) #loops and refreshes search after 300s
