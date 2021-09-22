@@ -65,7 +65,8 @@ py -m pip install discord
 py -m pip install datetime
 ```
 3. Download the project as a zip and run the script.
-4. Identify NFT code by opening the marketplace and parsing the URL. The NFT code can be found as follows: https://www.oneof.com/nft/{NFTcode}/marketplace-auction
+4. Identify NFT code by opening the marketplace page for the NFT you want to track and looking at the URL. The NFT code will be between /nft/ and /marketplace-auction/: https://www.oneof.com/nft/{NFTcode}/marketplace-auction
+![image](https://raw.githubusercontent.com/yagneshl/OneOf-NFT-Hunter/main/Images/step4.png)
 5. Run the script and input the NFT code identified in step 5 along with max price.
 6. ???
 7. Profit
@@ -73,11 +74,16 @@ py -m pip install datetime
 # Advanced Configuration 
 ## Discord Notifications
 
-Notifications can be set up using Discord webhooks. You can generate a webhook for a notification bot on your server under the Itegrations menu in the channel settings. 
+Notifications can be set up using Discord webhooks. You can generate a webhook for a notification bot on your server under the Itegrations menu in the channel settings of your personal notification server. 
+
+![image](https://raw.githubusercontent.com/yagneshl/OneOf-NFT-Hunter/main/Images/discord1.png)
+![image](https://raw.githubusercontent.com/yagneshl/OneOf-NFT-Hunter/main/Images/discord2.png)
 
 Once you create an integration, copy the webhook link. It should be in the following format: https://discord.com/api/webhooks/{WebhookID}/{WebhookToken}
 
-Add {WebhookID} and {WebhookToken} to the top of the script and uncomment.
+![image](https://raw.githubusercontent.com/yagneshl/OneOf-NFT-Hunter/main/Images/discord3.png)
+
+Add {WebhookID} and {WebhookToken} to the top of the script and uncomment (remove ##).
 
 # Issues Running NFTHunter 
 ## Known Issues
