@@ -82,6 +82,7 @@ Add {WebhookID} and {WebhookToken} to the top of the script and uncomment.
 # Issues Running NFTHunter 
 ## Known Issues
 * Null price entries in the OneOf database break functionality and will require a restart of the program once the error is fixed. This is often quickly resolved by the team but may take them some time.
+* Installing dependency packages may result in errors. Try troubleshooting by searching the exact error message on Google
 
 # Tips
 If I helped make you some money or you just liked the software and would like to let me know, here's my XTZ wallet address: tz1VEXmGT8skqGGmcZgpuxwFUJXgBaMBuzDa
