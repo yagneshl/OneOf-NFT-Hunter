@@ -11,10 +11,11 @@ import json
 ##webhook = Webhook.partial(WEBHOOK_ID, WEBHOOK_TOKEN,\
 ## adapter=RequestsWebhookAdapter())
 
+nftCode = input("NFT Code:")
+maxPrice = input("Enter max price ($USD):")
+print("Searching...")
+
 while True:
-    nftCode = input("NFT Code:")
-    maxPrice = input("Enter max price ($USD):")
-    print("Searching...")
     jsn = requests.get('https://api.oneof.com/nft/marketplace/' + nftCode + '?start=0&limit=1000')
     data = jsn.json()
     hunt = (data['results'])
