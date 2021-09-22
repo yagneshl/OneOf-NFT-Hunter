@@ -20,6 +20,7 @@ A data scraping tool for notifying user of new listings and showing prices of No
 ## Current Functionality
 
 NFT Hunter only works on OneOf.com and can run on a 5min loop to notify you through the console or through a bot on your personal discord server.
+![image](https://raw.githubusercontent.com/yagneshl/OneOf-NFT-Hunter/main/Images/example1.png)
 
 ### Other Notes on Functionality
 * NFT Hunter is designed to check if the specified NFT has a listed price in the NFT marketplace, errors in the OneOf database can break functionality of NFTHunter.  
